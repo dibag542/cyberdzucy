@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Безопасное общение</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- импорт bootstrap для navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/lesson1.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+<body>
+{% include 'main/header.html' %}
+
+<main>
+<div class="container">
+    <br>
+        <hr class="hr2">
+        <h1>Урок 1. Безопасное общение.</h1>
+        <div class="row">
+            <div class="col-lg-8 col-md-10">
+                <img class="w-100" src="{% static 'main/img/maxresdefault (1).png' %}">
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="row">
+            <h4>«Или ты, или тебя», - так гласит основное правило улицы.</h4>
+    <h5>В Интернете стоит вести себя так же, но это вовсе не значит, что надо на кого-то нападать, необходимо просто всегда быть на чеку, соблюдая некоторые основные правила:</h5>
+                </div>
+            </div>
+        </div>
+    <br>
+<div class="textcols">
+	<div class="textcols-item">
+        <div class="num">
+            <h2>1</h2>
+        </div>
+		<h2>Храните свои личные официальные данные в тайне.</h2>
+        <b> Всегда помните, что личные данные, например ФИО, адрес проживания, данные документа, удостоверяющего личность, дату рождения, следует вносить только на государственных и защищенных сайтах. Соединение с сайтом защищено, если слева от адреса сайта появился зеленый значок</b>
+</div>
+	<div class="textcols-item">
+		 <div class="num">
+            <h2>2</h2>
+        </div>
+		<h2>Соблюдайте сетевой этикет.</h2>
+        <b> Да, даже в Интернете следует соблюдать правила вежливого общения, например:</b>
+        <ul>
+            <li>Никогда не участвуйте в травле, не оскорбляйте кого бы то ни было;</li>
+            <li>Не игнорируйте вопросы собеседника;</li>
+            <li>Не отходите от темы разговора;</li>
+        </ul>
+	</div>
+	<div class="textcols-item">
+        		 <div class="num">
+            <h2>3</h2>
+        </div>
+		<h2>Не разговаривайте с незнакомцами.</h2>
+		<b>Если в какой-либо социальной сети вам внезапно приходит заявка о добавлении в «Друзья» или сообщение от незнакомого человека, то его лучше просто-напросто заблокировать. Эти люди могут быть:</b>
+        <ol>
+            <li>Мошенники</li>
+            <li>Педофилы</li>
+            <li>Зачинщики буллинга </li>
+        </ol>
+	</div>
+</div>
+    <br>
+    <hr class="hr2">
+    <br>
+    <h2>Главное правило – не следует делать в Интернете то, чего бы вы не сделали в реальной жизни.</h2>
+    <p>Да, виртуальный и реальный мир безусловно различаются, однако это не значит, что в компьютерном пространстве следует бросаться во все тяжкие и пробовать все то, что вы не можете себе позволить в физическом мире.  </p>
+    <br>
+</div>
+</main>
+</body>
+</html>

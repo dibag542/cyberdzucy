@@ -1,0 +1,161 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Что делать, если?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- импорт bootstrap для navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <script src="{% static 'main/js/script.js' %}" defer></script>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg" >
+
+    <div class="container nav-width">
+
+        <a class="navbar-brand" href="{% url 'home' %}"><img class="name-image" src="https://x-lines.ru/letters/i/cyrillicfancy/0522/0e0e86/36/0/4nppbqgos8emmwcy4n4pbp6tt5eapwcd.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link navwhatif" href="{% url 'whatif' %}">Что делать, если?</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'interesting' %}">Интересное рядом</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'create' %}">Скорая помощь</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'fishing' %}">Особый тест</a> </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Уроки
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="{% url 'lesson' %}">Важные уроки</a></li>
+          <li><a class="dropdown-item" href="{% url 'test' %}">Проверь себя</a></li>
+        </ul>
+      </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="container">
+<hr class="hr2">
+        <br>
+  <section class="section bg-ex-gradient-animation">
+    <h1 class="section__title">Если ваш аккаунт в социальной сети взломали</h1>
+    <button class="section__button section__button1">Что делать?</button>
+  </section>
+<br>
+  <section class="section bg-ex-gradient-animation">
+    <h1 class="section__title">Если вам поступают угрозы</h1>
+    <button class="section__button section__button2">Что делать?</button>
+  </section>
+        <br>
+        <section class="section bg-ex-gradient-animation">
+    <h1 class="section__title">Если на компьютере обнаружился вирус</h1>
+    <button class="section__button section__button3">Что делать?</button>
+  </section>
+<br>
+  <div class="modal modal1">
+    <div class="modal__main">
+      <h2 class="modal__title">Прежде всего не стоит паниковать.</h2>
+
+      <div class="modal__container">
+        <p>Вот советы, которые могут помочь в данной ситуации:</p>
+        <ol>
+            <li class="mli">Если доступ к аккаунту есть на другом устройстве, завершите сессии и смените пароль.</li>
+            <br>
+            <li class="mli">Вспомните, были ли к учётной записи привязаны банковские карты.</li>
+                <p>Если да, то заблокируйте их до момента возвращения доступа к вашему аккаунту.</p>
+            <br>
+            <li class="mli">Предупредите тех, с кем у вас были переписки, родных и близких о том, что аккаунт взломали.</li>
+                <p>Объясните, что вы не попали в беду и вам не требуется помощь. Важно действовать быстро — пока люди не перевели мошенникам деньги.</p>
+            <br>
+            <li class="mli">Оформите жалобу в службу поддержки, подтвердите, что вы настоящий владелец аккаунта.</li>
+            <br>
+            <li class="mli">Попросите друзей пожаловаться на вашу взломанную страницу.</li>
+                <p>Чем больше жалоб, тем быстрее страницу заблокируют, а значит и мошенник потеряет доступ к вашим личным данным.</p>
+        </ol>
+          <p>Главное – не поддавайтесь на угрозы и шантаж, не платите выкуп — нет никакой гарантии, что взломщик получит деньги и вернёт аккаунт в сохранности или не выложит ваши персональные данные в общий доступ.</p>
+      </div>
+
+
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+  <div class="modal modal2">
+    <div class="modal__main">
+      <h2 class="modal__title">В первую очередь, никогда не ведитесь на угрозы.</h2>
+
+      <div class="modal__container">
+        <ul>
+            <li class="mli">Сохраните доказательства:</li>
+            <p>Сделайте скриншоты всех сообщений, которые содержат угрозы. Сохраните дату, время и информацию об отправителе. Если угрозы поступают по телефону, то постарайтесь записать угрозы на диктофон.</p>
+            <br>
+            <li class="mli">Не отвечайте:</li>
+            <p>По возможности не вступайте в диалог с угрожающим. Это может усугубить ситуацию.</p>
+            <br>
+            <li class="mli">Сообщите о случившемся:</li>
+            <p>Если угроза серьезная, сообщите в правоохранительные органы. Предоставьте им все собранные доказательства.</p>
+            <br>
+            <li class="mli">Обратитесь за поддержкой:</li>
+            <p>Поговорите с родителями, друзьями или людьми, которым доверяешь, чтобы получить моральную поддержку в сложной ситуации.</p>
+            <br>
+            <li class="mli">Измените настройки конфиденциальности:</li>
+            <p>Если угрозы поступают через социальные сети, измените свои настройки безопасности и конфиденциальности, чтобы ограничить доступ к вашему профилю.</p>
+        </ul>
+      </div>
+
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+          <div class="modal modal3">
+    <div class="modal__main">
+      <h2 class="modal__title">Пошаговое руководство как стоит себя вести в данной ситуации:</h2>
+
+      <div class="modal__container">
+        <ol>
+            <li class="mli">Отключите Интернет.</li>
+            <p>Это предотвратит дальнейшее распространение вируса.</p>
+            <br>
+            <li class="mli">Запустите антивирусное программное обеспечение.</li>
+            <p>Также убедитесь, что антивирусное ПО обновлено до последней версии</p>
+            <br>
+            <li class="mli">Удалите вредоносное ПО.</li>
+            <p>Следуйте инструкциям антивируса для удаления обнаруженных угроз. Если антивирус не может удалить вирус, рассмотрите возможность использования специальных утилит для удаления вредоносного ПО, таких как Malwarebytes.</p>
+            <br>
+            <li class="mli">Перезагрузите компьютер.</li>
+            <p>Если проблемы сохраняются, перезагрузите компьютер в безопасном режиме (обычно это можно сделать, удерживая клавишу F8 во время загрузки). Запустите антивирусное сканирование в этом режиме.</p>
+            <br>
+            <li class="mli">Обновите операционную систему и программы.</li>
+            <p>Следует убедиться, что ваша операционная система и все программы обновлены. Это поможет устранить уязвимости, которые могут использоваться вирусами.</p>
+            <br>
+            <li class="mli">Восстановите систему.</li>
+            <p>Если вирус сильно повредил систему, рассмотрите возможность восстановления системы до предыдущей точки восстановления, если у вас эта функция включена.</p>
+            <br>
+            <li class="mli">Создайте резервные копии.</li>
+            <p>После очистки системы создайте резервные копии необходимых данных на внешнем носителе, чтобы предотвратить их потерю в будущем.</p>
+        </ol>
+          <p>Обратитесь за помощью профессионала, если вы не можете решить проблему самостоятельно.</p>
+      </div>
+
+
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+  </div>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Результат теста</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <script src="{% static 'main/js/script.js' %}" defer></script>
+</head>
+<body>
+   {% include 'main/header.html' %}
+    <main>
+        <div class="container">
+            <hr class="hr2">
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-10">
+                    <img class="w-100" src="{% static 'main/img/45bcd655-9b9d-4c3a-8-Photoroom.png' %}">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="test1">
+                        <h2>Вы были на грани провала, но справились!</h2>
+                    </div>
+                    <div class="test7">
+                        <p>Вы заметили кнопку на последней ступени регистрации, однако она все-таки была замечена, а значит тест на внимательность пройдён.</p>
+                    </div>
+                    <br>
+                    <div class="test5">
+                        <p>Особенность данного теста состоит в том, что знания, полученные с помощью уроков, были проверены на практике. Будь владельцем данного сайта некий злоумышленник, ваши личные данные давно были бы в его цепких руках.</p>
+                    </div>
+                    <br>
+                </div>
+                <hr class="hr2">
+                <div class="test7">
+                    <p>Но вы справились с тестом, что не может не радовать. Также не волнуйтесь за свои личные данные, ведь тест построен таким образом, что конфиденциальная информация не попадает в базу данных - место хранения информации.</p>
+                </div>
+                <div class="row test7">
+                    <ul>Ознакомьтесь со следующими советами:
+                        <li>Проверяйте адреса сайтов и ссылок. Малейшая разница может стоить вам украденных данных.</li>
+                        <li>Не вводите конфиденциальные данные на негосударственных сайтах.</li>
+                        <li>Если есть возможность взаимодействовать с сайтом без регистрации, то лучше не заводить личный кабинет.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

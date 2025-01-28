@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Безопасное использование соединений</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- импорт bootstrap для navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/lesson1.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+<body>
+{% include 'main/header.html' %}
+<main>
+<div class="container">
+<br>
+<hr class="hr2">
+<h1>Урок 2. Безопасное использование соединений.</h1>
+<div class="row">
+    <div class="col-lg-8 col-md-10">
+        <img class="w-100" src="{% static 'main/img/gl.kartinka-sms.png' %}">
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="row">
+            <h5>Общественные сети – это безусловно удобно, однако не всегда безопасно. Чем же опасны публичные Wi-Fi сети? Думаю, что вы уже догадались, конечно же кражей данных. Пользуясь Интернетом, вы передаете много ценной информации — платежные данные, логины и пароли от всевозможных сервисов, документы и переписку.</h5>
+            <h5>Если она попадет в руки преступника, он сможет перевести все ваши банковские накопления на свой счет, украсть ваши аккаунты и распространять через них спам или выпрашивать у ваших знакомых деньги.</h5>
+        </div>
+    </div>
+</div>
+<hr class="hr2">
+<h2>Что же делать, чтобы избежать попадания в киберпреступления, связанные с открытыми сетями?</h2>
+<br>
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+        <div class="round">
+            <h2>1</h2>
+        </div>
+        <div class="table">
+            <br>
+            <h3>Не доверяйте общественным сетям Wi-Fi.</h3>
+            <h6>Когда вы пользуетесь ими, злоумышленник может легко украсть ваши личные данные, что потом может обернуться неприятной ситуацией в виде шантажа или разбирательства, не думаю, что вы этого хотите.</h6>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="round">
+            <h2>2</h2>
+        </div>
+        <div class="table">
+            <br>
+            <h3>Проверяйте названия точек доступа.</h3>
+            <h6>Некоторые злоумышленники создают собственные Интернет-сети и заманивают потенциальных жертв в них, так что не теряйте бдительность.</h6>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="round">
+            <h2>3</h2>
+        </div>
+        <div class="table">
+            <br>
+            <h3>Откажитесь от автоматического подключения.</h3>
+            <h6>К примеру, вы решили сэкономить себе время и разрешили своему устройству автоматическое подключение к доступным сетям Wi-Fi. Поверьте, злоумышленники тоже экономят свое время: создав фальшивую сеть, они будут ждать когда ваш телефон подключиться к ней, а далее им не составит труда украсть ваши данные.</h6>
+        </div>
+    </div>
+</div>
+    <br>
+</div>
+</main>
+</body>
+</html>
